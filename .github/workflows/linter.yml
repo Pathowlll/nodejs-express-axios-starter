@@ -19,8 +19,5 @@ jobs:
         with:
           node-version-file: .node-version
           cache: npm
-      - name: Install dependencies
-        id: install
-        run: npm ci
       - name: Run checkstyle
         run: npm run linter
